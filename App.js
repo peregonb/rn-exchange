@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {StatusBar, StyleSheet, Text, View} from 'react-native';
+import {StatusBar, StyleSheet, View} from 'react-native';
 import * as Font from 'expo-font';
 import {AppLoading} from "expo";
 import Content from "./components/Content";
@@ -52,8 +52,8 @@ const App = () => {
         <View style={styles.container}>
             {statusBar}
             {response && responseBonus ?
-               <Content response={response} responseBonus={responseBonus} floorValue={floorValue}/> :
-               <Preloader/>
+                <Content response={response} responseBonus={responseBonus} floorValue={floorValue}/> :
+                <Preloader/>
             }
         </View>
     )
